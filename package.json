@@ -1,0 +1,19 @@
+{
+  "name": "transperfect-entry-task",
+  "version": "1.0.0",
+  "description": "Transperfect Entry Task",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch scss:public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmnjnklc/transperfect-entry-task.git"
+  },
+  "author": "Nemanja Nikolic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmnjnklc/transperfect-entry-task/issues"
+  },
+  "homepage": "https://github.com/nmnjnklc/transperfect-entry-task#readme"
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Resume</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a id="linkA" class="active">Home</a>
+        <a id="linkB" class="">Skills and competences</a>
+        <a id="linkC" class="">Education & Work experience</a>
+        <a id="linkD" class="">Contact</a>
+      </nav>
+      <section id="home" class="home">
+        <div class="image-container"></div>
+        <div class="intro-text">
+          <h3>Computer Network Administrator</h3>
+          <h1>Nemanja Nikolić</h1>
+          <p>
+            I'm ambitious, responsible and hardworking individual, able to adept
+            at handling multiple tasks on a daily basis competently and at
+            working well under pressure.<br />
+            A key strength is communication; building strong relationships with
+            people in order to deliver the best results.
+          </p>
+          <br /><br />
+          <a href="./public/documents/NemanjaNikolicCV.pdf" download=""
+            >Download CV</a
+          >
+        </div>
+      </section>
+      <section id="skills-and-competences" class="skills-and-competences">
+        <div class="card-container">
+          <div class="card html">
+            <img src="./public/images/html.svg" />
+            <label for="html">HTML5</label>
+            <progress id="html" value="90" max="100"></progress>
+          </div>
+          <div class="card css">
+            <img src="./public/images/css.svg" />
+            <label for="css">CSS3</label>
+            <progress id="css" value="80" max="100"></progress>
+          </div>
+          <div class="card js">
+            <img src="./public/images/js.svg" />
+            <label for="js">JavaScript</label>
+            <progress id="js" value="65" max="100"></progress>
+          </div>
+          <div class="card php">
+            <img src="./public/images/php.svg" />
+            <label for="php">PHP</label>
+            <progress id="php" value="60" max="100"></progress>
+          </div>
+          <div class="card sql">
+            <img src="./public/images/sql.svg" />
+            <label for="sql">SQL</label>
+            <progress id="sql" value="65" max="100"></progress>
+          </div>
+          <div class="card git">
+            <img src="./public/images/git.svg" />
+            <label for="git">GIT</label>
+            <progress id="git" value="70" max="100"></progress>
+          </div>
+          <div class="card linux">
+            <img src="./public/images/linux.svg" />
+            <label for="linux">Linux</label>
+            <progress id="linux" value="75" max="100"></progress>
+          </div>
+          <div class="card win">
+            <img src="./public/images/win.svg" />
+            <label for="win">Windows</label>
+            <progress id="win" value="90" max="100"></progress>
+          </div>
+        </div>
+      </section>
+      <section
+        id="education-and-work-experiences"
+        class="education-and-work-experiences"
+      >
+        <div class="timeline"></div>
+        <div class="bullet first-b"></div>
+        <div class="bullet second-b"></div>
+        <div class="bullet third-b"></div>
+        <div class="bullet fourth-b"></div>
+        <div class="bullet fifth-b"></div>
+        <div class="bullet sixth-b"></div>
+        <div class="event-card left first-c">
+          <h3>09/2013</h3>
+          <p>
+            Started highschool education for Computer Network Administrator at
+            Prva tehnička škola.
+          </p>
+        </div>
+        <div class="event-card right second-c">
+          <h3>07/2016</h3>
+          <p>Intern at Start Computers as PC Technician.</p>
+        </div>
+        <div class="event-card left third-c">
+          <h3>06/2017</h3>
+          <p>Finished highschool education.</p>
+        </div>
+        <div class="event-card right fourth-c">
+          <h3>08/2017</h3>
+          <p>Intern at Technomedia d.o.o. as IT Administration Officer.</p>
+        </div>
+        <div class="event-card left fifth-c">
+          <h3>10/2017</h3>
+          <p>
+            Started college course for Information Technology at Fakultet
+            tehničkih nauka.
+          </p>
+        </div>
+        <div class="event-card right sixth-c">
+          <h3>10/2019</h3>
+          <p>IT Support Technician at Technosigma d.o.o.</p>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <div class="input-container">
+            <input type="text" name="firstname" placeholder="First name" />
+            <input type="text" name="lastname" placeholder="Last name" />
+            <input type="text" name="email" placeholder="Email address" />
+          </div>
+          <textarea name="message" placeholder="Message..."></textarea>
+        </div>
+        <a href="#">Send</a>
+      </section>
+      <footer>
+        <img src="./public/images/facebook.svg" />
+        <img src="./public/images/instagram.svg" />
+        <img src="./public/images/viber.svg" />
+      </footer>
+    </div>
+    <button
+      class="hide-me"
+      onclick="backOnTop()"
+      id="back-on-top"
+      title="Back on top!"
+    >
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <script src="./public/javascript/scroll.js"></script>
+  </body>
+</html>

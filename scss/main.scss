@@ -1,0 +1,10 @@
+@use "_basic.scss";
+@use "_variables.scss";
+
+@use "./layouts/_navigation.scss";
+@use "./layouts/_footer.scss";
+
+@use "./pages/_home.scss";
+@use "./pages/_skills-and-competences.scss";
+@use "./pages/_education-and-work-experiences.scss";
+@use "./pages/_contact.scss";

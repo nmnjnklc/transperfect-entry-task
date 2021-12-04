@@ -1,0 +1,43 @@
+@use "_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$font;
+  background-color: variables.$background-color;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: variables.$breakpoint-mobile) {
+  .container {
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: variables.$breakpoint-mobile) {
+  .container {
+    width: calc(variables.$breakpoint-mobile - 18px);
+  }
+}
+
+@media only screen and (min-width: variables.$breakpoint-tablet) {
+  .container {
+    width: calc(variables.$breakpoint-tablet - 22px);
+  }
+}
+
+@media only screen and (min-width: variables.$breakpoint-largescreen) {
+  .container {
+    width: calc(variables.$breakpoint-largescreen - 30px);
+    margin: 0 auto;
+  }
+}

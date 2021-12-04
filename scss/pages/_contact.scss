@@ -1,0 +1,89 @@
+@use "../variables.scss";
+
+.contact {
+  width: 80%;
+  margin: 0 auto 80px;
+  display: flex;
+  flex-direction: column;
+  color: variables.$light-gray;
+  align-items: center;
+  .contact-container {
+    display: flex;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  input,
+  textarea {
+    color: variables.$light-gray;
+    background-color: variables.$background-color;
+    border: 2px solid variables.$dark-gray;
+    color: variables.$background-color;
+    transition: border 250ms linear;
+    border-radius: 22px;
+    padding: 10px;
+    margin: 12px;
+    width: 300px;
+    &:hover {
+      color: variables.$light-gray;
+      border: 2px solid variables.$primary-color;
+      transition: border 250ms linear;
+    }
+    &:focus {
+      color: variables.$light-gray;
+      border: 2px solid variables.$primary-color;
+      outline: none;
+    }
+  }
+  textarea[name="message"] {
+    width: 500px;
+  }
+  a {
+    text-align: center;
+    height: 44px;
+    width: 100px;
+    margin-top: 12px;
+    padding: 8px 26px;
+    border: 3px solid variables.$primary-color;
+    border-radius: 24px;
+    text-decoration: none;
+    color: variables.$light;
+    background-color: variables.$dark-gray;
+    transition: background-color 250ms linear;
+  }
+  a:hover {
+    background-color: variables.$primary-color;
+    transition: background-color 250ms linear;
+  }
+}
+
+@media only screen and (max-width: variables.$breakpoint-mobile) {
+  .contact {
+    display: block;
+    text-align: center;
+    .contact-container {
+      display: block;
+    }
+    input {
+      margin: 6px 0;
+    }
+    textarea[name="message"] {
+      width: 100%;
+      height: 100px;
+      margin: 6px 0 32px 0;
+    }
+    a {
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: variables.$breakpoint-mobile) {
+}
+
+@media only screen and (min-width: variables.$breakpoint-tablet) {
+}
+
+@media only screen and (min-width: variables.$breakpoint-largescreen) {
+}

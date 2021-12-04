@@ -1,0 +1,130 @@
+@use "../_variables.scss";
+
+.education-and-work-experiences {
+  position: relative;
+  width: 80%;
+  height: 90vh;
+  min-height: 910px;
+  margin: 0 auto;
+  .timeline {
+    position: absolute;
+    width: 6px;
+    height: 721px;
+    background-color: variables.$primary-color;
+    border-radius: 7px;
+    left: 50%;
+    top: 6%;
+  }
+  .bullet {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: variables.$light;
+    box-shadow: 0px 0px 0px 6px variables.$primary-color;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-3px);
+  }
+  .event-card {
+    position: absolute;
+    width: 45%;
+    color: variables.$light-gray;
+    margin: 26px;
+    border-radius: 22px;
+    box-shadow: 0px 0px 12px 0px #000000;
+    h3 {
+      padding: 12px 12px 6px 12px;
+    }
+    p {
+      padding: 6px 12px 12px 12px;
+    }
+  }
+  .first-c {
+    transform: translateY(25px);
+  }
+  .first-b {
+    transform: translate(-3px, 105px);
+  }
+  .second-c {
+    transform: translate(112%, 160px);
+  }
+  .second-b {
+    transform: translate(-3px, 230px);
+  }
+  .third-c {
+    transform: translateY(280px);
+  }
+  .third-b {
+    transform: translate(-3px, 350px);
+  }
+  .fourth-c {
+    transform: translate(112%, 400px);
+  }
+  .fourth-b {
+    transform: translate(-3px, 470px);
+  }
+  .fifth-c {
+    transform: translateY(520px);
+  }
+  .fifth-b {
+    transform: translate(-3px, 600px);
+  }
+  .sixth-c {
+    transform: translate(112%, 655px);
+  }
+  .sixth-b {
+    transform: translate(-3px, 720px);
+  }
+  .left {
+    text-align: right;
+  }
+  .right {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: variables.$breakpoint-mobile) {
+  .education-and-work-experiences {
+    margin: 50px 20px 0 20px;
+    .timeline {
+      left: 0;
+      height: 680px;
+    }
+    .bullet {
+      left: 0;
+    }
+    .event-card {
+      width: 100%;
+      position: relative;
+      text-align: left;
+      transform: none;
+    }
+    .first-b {
+      transform: translate(-3px, 60px);
+    }
+    .second-b {
+      transform: translate(-3px, 200px);
+    }
+    .third-b {
+      transform: translate(-3px, 320px);
+    }
+    .fourth-b {
+      transform: translate(-3px, 440px);
+    }
+    .fifth-b {
+      transform: translate(-3px, 580px);
+    }
+    .sixth-b {
+      transform: translate(-3px, 720px);
+    }
+  }
+}
+
+@media only screen and (min-width: variables.$breakpoint-mobile) {
+}
+
+@media only screen and (min-width: variables.$breakpoint-tablet) {
+}
+
+@media only screen and (min-width: variables.$breakpoint-largescreen) {
+}
